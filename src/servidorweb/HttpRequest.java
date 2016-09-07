@@ -49,7 +49,8 @@ final class HttpRequest implements Runnable
     private void processRequest() throws Exception
     {
         String requestLine, headerLine, nomeArq, statusLine, contentTypeLine;
-        FileInputStream enviaArquivo, entityBody;
+        FileInputStream enviaArquivo=null, entityBody;
+     
         
         //Abre uma stream para ler o que foi recebido
         BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
@@ -109,7 +110,9 @@ final class HttpRequest implements Runnable
         //Marcador de fim de cabeçalho
         outToClient.writeBytes(CLRF);
         
-        //Enviar os dados
+        //Envia os dados (sem if para ver se o arquivo existe pois nesse caso envia o arquivo de erro)
+        sendBytes(entityBody, outToClient);
+        enviaArquivo.close();
         
         /* Parte B: Enviando uma Resposta - End */
         
@@ -140,8 +143,20 @@ final class HttpRequest implements Runnable
         catch(Exception e)
         {
             System.out.println("Não foi possível retornar o arquivo de erro 404.");
+            e.printStackTrace();
             return null;
         }
+    }
+    
+    //Método que envia os dados do corpo
+    private static void sendBytes(FileInputStream enviaArquivo, DataOutputStream outToClient) throws Exception {
+        // Constrói um buffer de 1K para comportar os bytes no caminho para o socket.
+        byte[] buffer = new byte[1024];
+	int bytes = 0;
+	// Copia o arquivo requisitado dentro da cadeia de saída do socket.
+	while((bytes = enviaArquivo.read(buffer)) != -1 ) 
+		outToClient.write(buffer, 0, bytes);
+	
     }
 
 }
