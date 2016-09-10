@@ -1,0 +1,21 @@
+/***********************************************************************/
+/* UNIVERSIDADE DE SAO PAULO - ESCOLA DE ARTES, CIENCIAS E HUMANIDADES */
+/*---------------------------------------------------------------------*/
+/* Bruno Salerno Rocha - 9004525 - Turma 94                            */
+/* Caio Tavares Cruz - 8921840 - Turma 94                              */
+/*---------------------------------------------------------------------*/
+/* Manual de Utilizacao - EP de Redes - 2º Semestre 2016               */
+/* Servidor Web Multithreaded - Entrega B                              */
+/***********************************************************************/
+
+Esta pasta contém, além deste manual e do relatório, dois diretórios:
+
+Codigo -> Contém os arquivos .java (arquivos de codigo) referentes à implementação dessa entrega
+Classes Compiladas -> Contém os arquivos .class (compilados) referentes à implementação dessa entrega
+
+As duas classes pertencem ao pacote servidorweb. Para executar a aplicação via terminal:
+- Direcionar até o diretório das classes compiladas, por exemplo: C:\Users\ctcca\Documents\GitHub\ServidorWeb\9004525_8921840_EntregaA\Classes Compiladas>
+- Escrever: java servidorweb.ServidorWeb
+- A partir daí a aplicação já estará rodando, basta fazer os testes
+
+ATENÇÃO: O diretório raiz do servidor web é a pasta "Classes Compiladas", isto significa que qualquer arquivo que você deseja que seja encontrado em localhost:6789/ deve estar nessa pasta. O arquivo best.jpg é um exemplo disso: como ele está na pasta "Classes Compiladas", o acesso em localhost:6789/best.jpg retorna a imagem.
