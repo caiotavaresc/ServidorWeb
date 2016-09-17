@@ -48,9 +48,13 @@ final class HttpRequest implements Runnable
     //Metodo responsavel por processar as requisicoes HTTP
     private void processRequest() throws Exception
     {
-        String requestLine, headerLine, nomeArq, statusLine, contentTypeLine;
+        String requestLine, headerLine, nomeArq, statusLine, contentTypeLine, saidaHTML;
         FileInputStream enviaArquivo=null, entityBody;
-     
+        File diretorio;
+        
+        //Inicializacao forcada
+        boolean listaDiretorio = false;
+        saidaHTML = "";
         
         //Abre uma stream para ler o que foi recebido
         BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
@@ -82,18 +86,54 @@ final class HttpRequest implements Runnable
         //O browser envia o nome do arquivo com uma barra "\"
         //Adicionar um ponto (.) ao início para pesquisar no diretório atual
         nomeArq = "." + nomeArq;
+        
         //Tentar obter o arquivo
         try
-        {
-            enviaArquivo = new FileInputStream(nomeArq);
-            
+        {    
+            /* Parte C - Tratativa de diretorios */
+            diretorio = new File(nomeArq);
+
+            if(diretorio.isDirectory())
+            {
+
+                //Se for um diretorio, verificar a opcao
+                switch(ServidorWeb.opcaoDiretorio)
+                {
+                    case 1:
+                        saidaHTML = montaArquivoRetorno(diretorio, nomeArq);
+                        listaDiretorio = true;
+                        break;
+                    case 2:
+                        //Opcao 2 - Enviar a mensagem de conteudo nao pode ser listado
+                        nomeArq = "config/ConteudoIndisponivel.html";
+                        break;
+                    case 3:
+                        //Opcao 3 - Enviar o arquivo index.html
+                        nomeArq = diretorio.getPath()+"/index.html";
+                        break;
+                }
+            }
+            /* Fim PARTE C */
+               
             statusLine = "HTTP/1.1 200 OK" + CLRF;
-            contentTypeLine = "Content-type: " + this.contentType(nomeArq) + CLRF;
-            entityBody = enviaArquivo;
+            
+            /* Parte C - Para a opcao de listar os arquivos do diretorio, nao sera necessario abrir o arquivo */
+            if(listaDiretorio)
+            {
+                contentTypeLine = "Content-type: text/html" + CLRF;                
+                entityBody = null;
+            }
+            else
+            {
+                //Aqui so vai entrar se o que foi pedido for um arquivo mesmo
+                enviaArquivo = new FileInputStream(nomeArq);
+                contentTypeLine = "Content-type: " + this.contentType(nomeArq) + CLRF;
+                entityBody = enviaArquivo;
+            }
         }
         catch(FileNotFoundException e)
         {
-            statusLine = "HTTP/1.1 404 Not Found";
+            statusLine = "HTTP/1.1 404 Not Found" + CLRF;
             contentTypeLine = "Content-type: text/html" + CLRF;
             entityBody = enviaArquivo = getErro404();
         }
@@ -110,8 +150,15 @@ final class HttpRequest implements Runnable
         outToClient.writeBytes(CLRF);
         
         //Envia os dados (sem if para ver se o arquivo existe pois nesse caso envia o arquivo de erro)
-        sendBytes(entityBody, outToClient);
-        enviaArquivo.close();
+        if(listaDiretorio)
+        {
+            outToClient.writeBytes(saidaHTML);
+        }
+        else
+        {
+            sendBytes(entityBody, outToClient);
+            enviaArquivo.close();
+        }
         
         /* Parte B: Enviando uma Resposta - End */
         
@@ -137,7 +184,7 @@ final class HttpRequest implements Runnable
     {
         try
         {
-            return new FileInputStream("Erro404.html");
+            return new FileInputStream("config/Erro404.html");
         }
         catch(Exception e)
         {
@@ -157,5 +204,45 @@ final class HttpRequest implements Runnable
 		outToClient.write(buffer, 0, bytes);
 	
     }
-
+    
+    //Método que monta um arquivo de retorno quando a opção é listar os arquivos do servidor
+    public static String montaArquivoRetorno(File diretorio, String nomeArq)
+    {
+        String[] arquivos, split;
+        String saidaHTML, preLink;
+        
+        preLink = "";
+        //Se o diretorio nao terminar com / a pagina entende como um arquivo individual
+        //Para controlar os links, contornamos esse problema
+        if(nomeArq.charAt(nomeArq.length()-1) != '/')
+        {
+            split = nomeArq.split("/");
+            preLink = split[split.length-1] + "/";
+        }
+        
+        //listar todos os arquivos do diretorio;
+        arquivos = diretorio.list();
+        
+        //Montar a saida de dados
+        saidaHTML = ServidorWeb.headerListaConteudo;
+        
+        //Exibir os diretorios pai e atual (default)
+        saidaHTML = saidaHTML + "<A href='"+preLink+".'>.</A><BR>";
+        saidaHTML = saidaHTML + "<A href='"+preLink+"..'>..</A><BR>";
+        
+        for(int i = 0; i < arquivos.length; i++)
+        {
+            String separador = "";
+            File arq = new File(diretorio.getPath()+"\\"+ arquivos[i]);
+            if(arq.isDirectory())
+                separador = "/";
+            
+            saidaHTML = saidaHTML + "<A href='"+preLink +arquivos[i]+ separador +"'>" + arquivos[i] + "</A><BR>";
+        }
+        
+        saidaHTML = saidaHTML + ServidorWeb.footerListaConteudo;
+        
+        return saidaHTML;
+    }
+    
 }

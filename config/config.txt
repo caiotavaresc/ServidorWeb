@@ -1,0 +1,15 @@
+#########################################################
+#        Arquivo de Configuracao do Servidor Web        #
+#########################################################
+
+Porta: 6789
+
+Lista de Pastas Autenticadas:
+servidorweb
+config
+
+Senha de Autenticacao: Xdv4b
+
+Opcao de diretorio: 1
+
+(1 - listagem de conteudo | 2 - Não listar conteudo | 3 - procurar por "index.html")
