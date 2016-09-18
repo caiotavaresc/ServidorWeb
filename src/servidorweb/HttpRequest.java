@@ -23,10 +23,13 @@ final class HttpRequest implements Runnable
     //Referencia do socket utilizado para conexao
     private Socket connectionSocket;
     
+    private Logger log;
+    
     //Metodo construtor - Associa um socket ao objeto de thread
     public HttpRequest(Socket _processador)
     {
         this.connectionSocket = _processador;
+        this.log = new Logger();
     }
    
     //Metodo run - organiza os processamentos de requisicao - Necessario por conta da interface Runnable
@@ -41,6 +44,7 @@ final class HttpRequest implements Runnable
         {
             //Imprimir a excecao, caso haja
             System.out.println("Erro: " + e);
+            e.printStackTrace();
         }
         
     }
@@ -48,9 +52,12 @@ final class HttpRequest implements Runnable
     //Metodo responsavel por processar as requisicoes HTTP
     private void processRequest() throws Exception
     {
-        String requestLine, headerLine, nomeArq, statusLine, contentTypeLine, saidaHTML;
+        String requestLine, hostLine, headerLine, nomeArq, statusLine, contentTypeLine, saidaHTML;
         FileInputStream enviaArquivo=null, entityBody;
         File diretorio;
+        
+        //Data e hora da requisicao
+        log.DataRequisicao = new Date();
         
         //Inicializacao forcada
         boolean listaDiretorio = false;
@@ -69,10 +76,19 @@ final class HttpRequest implements Runnable
         System.out.println();
         System.out.println(requestLine);
         
+        //Linha do host
+        hostLine = inFromClient.readLine();
+        System.out.println(hostLine);
+        
+        //Mandar a linha de Host para o log
+        log.LinhaHost = hostLine;
+        
         //Fazer a leitura dos dados - enquanto houver linhas de cabecalho
-        while((headerLine = inFromClient.readLine()).length() != 0)
+        headerLine = inFromClient.readLine();
+        while(headerLine.length() != 0)
         {
             System.out.println(headerLine);
+            headerLine = inFromClient.readLine();
         }
         
         /* Parte B: Enviando uma Resposta - Begin */
@@ -82,6 +98,9 @@ final class HttpRequest implements Runnable
         token.nextToken();
         
         nomeArq = token.nextToken();
+        
+        //Mandar o conteudo para o objeto de log
+        log.Conteudo = nomeArq;
         
         //O browser envia o nome do arquivo com uma barra "\"
         //Adicionar um ponto (.) ao início para pesquisar no diretório atual
@@ -142,17 +161,21 @@ final class HttpRequest implements Runnable
         
         //Linha de status
         outToClient.writeBytes(statusLine);
+        log.QuantBytesResposta += statusLine.getBytes().length;
         
         //Cabeçalho
         outToClient.writeBytes(contentTypeLine);
+        log.QuantBytesResposta += contentTypeLine.getBytes().length;
         
         //Marcador de fim de cabeçalho
         outToClient.writeBytes(CLRF);
+        log.QuantBytesResposta += CLRF.getBytes().length;
         
         //Envia os dados (sem if para ver se o arquivo existe pois nesse caso envia o arquivo de erro)
         if(listaDiretorio)
         {
             outToClient.writeBytes(saidaHTML);
+            log.QuantBytesResposta += saidaHTML.getBytes().length;
         }
         else
         {
@@ -166,6 +189,10 @@ final class HttpRequest implements Runnable
         inFromClient.close();
         outToClient.close();
         connectionSocket.close();
+        
+        //Criar uma nova thread para escrever no log
+        Thread threadLog = new Thread(log);
+        threadLog.start();
     }
     
     //Método que recebe uma nome de arquivo (string) e retorna um content-type
@@ -195,14 +222,16 @@ final class HttpRequest implements Runnable
     }
     
     //Método que envia os dados do corpo
-    private static void sendBytes(FileInputStream enviaArquivo, DataOutputStream outToClient) throws Exception {
+    private void sendBytes(FileInputStream enviaArquivo, DataOutputStream outToClient) throws Exception {
         // Constrói um buffer de 1K para comportar os bytes no caminho para o socket.
         byte[] buffer = new byte[1024];
 	int bytes = 0;
 	// Copia o arquivo requisitado dentro da cadeia de saída do socket.
 	while((bytes = enviaArquivo.read(buffer)) != -1 ) 
+        {
 		outToClient.write(buffer, 0, bytes);
-	
+                log.QuantBytesResposta += bytes;
+        }
     }
     
     //Método que monta um arquivo de retorno quando a opção é listar os arquivos do servidor

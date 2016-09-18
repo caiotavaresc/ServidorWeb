@@ -27,6 +27,7 @@ public class ServidorWeb {
     static String headerListaConteudo;
     static String footerListaConteudo;
     static int porta;
+    static File logFile;
     /* Fim Parte C - Variáveis do arquivo de configuração */
 
     //Thread principal - Thread MAIN
@@ -43,6 +44,10 @@ public class ServidorWeb {
         //Se a opcao de controle de diretorios for 1 - listar conteudo - preencher o header e o footer
         if(opcaoDiretorio == 1)
             preencheDadosPagina();
+        
+        //Obter arquivo de log
+        Logger.getLogFile();
+        
         /* Fim Parte C */
         
         //Criacao do socket para a porta escolhida
