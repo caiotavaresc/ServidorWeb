@@ -1,0 +1,7 @@
+AuthUserFile .htpasswd
+AuthGroupFile null
+AuthName EnterPassword
+AuthType Basic
+
+require user admin
+

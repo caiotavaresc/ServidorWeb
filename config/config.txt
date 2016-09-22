@@ -8,7 +8,7 @@ Lista de Pastas Autenticadas:
 servidorweb
 config
 
-Senha de Autenticacao: Xdv4b
+Senha de Autenticacao: dGVzdGU6WGR2NGI=
 
 Opcao de diretorio: 1
 

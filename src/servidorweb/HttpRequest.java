@@ -52,8 +52,8 @@ final class HttpRequest implements Runnable
     //Metodo responsavel por processar as requisicoes HTTP
     private void processRequest() throws Exception
     {
-        String requestLine, hostLine, headerLine, nomeArq, statusLine, contentTypeLine, saidaHTML;
-        FileInputStream enviaArquivo=null, entityBody;
+        String requestLine="", hostLine, headerLine, nomeArq, statusLine="", contentTypeLine="", saidaHTML, Authorization="";
+        FileInputStream enviaArquivo=null, entityBody=null;
         File diretorio;
         
         //Data e hora da requisicao
@@ -89,6 +89,10 @@ final class HttpRequest implements Runnable
         {
             System.out.println(headerLine);
             headerLine = inFromClient.readLine();
+            //Verifica se a requisição tem autorizacao
+            if(headerLine.contains("Authorization")){
+                Authorization=headerLine;
+            }
         }
         
         /* Parte B: Enviando uma Resposta - Begin */
@@ -109,52 +113,84 @@ final class HttpRequest implements Runnable
         //Tentar obter o arquivo
         try
         {    
+            boolean acesso=true;
             /* Parte C - Tratativa de diretorios */
             diretorio = new File(nomeArq);
-
-            if(diretorio.isDirectory())
-            {
-
-                //Se for um diretorio, verificar a opcao
-                switch(ServidorWeb.opcaoDiretorio)
+            
+            /*  Autenticação */
+            //Verifica se precisa de autorização
+            for (int i=0; i<ServidorWeb.diretoriosAutenticados.size();i++){
+                    if(diretorio.getPath().contains(ServidorWeb.diretoriosAutenticados.get(i))){
+                        //Verifica se veio autorizacao no header
+                        if(Authorization.length()==0){
+                            statusLine = "HTTP/1.1 401 Authorization Required" + CLRF;
+                            contentTypeLine = "WWW-Authenticate: Basic realm=\"protected\"" + CLRF;
+                            entityBody = enviaArquivo = getErro(401);
+                            acesso=false;
+                        }else{
+                            String[] split;
+                            split=Authorization.split("Authorization: Basic ");
+                            String auth=split[1];
+                            //Se a autenticação for aceita
+                            if(auth.equals(ServidorWeb.senhaAutenticacao)){
+                                acesso=true;
+                            //Se não for aceita    
+                            }else{
+                                statusLine = "HTTP/1.1 401 Authorization Required" + CLRF;
+                                contentTypeLine = "WWW-Authenticate: Basic realm=\"protected\"" + CLRF;
+                                entityBody = enviaArquivo = getErro(401);
+                                acesso=false;
+                            }
+                        }
+                       
+                    }
+            }
+            //Se o acesso é livre
+            if(acesso){
+                if(diretorio.isDirectory())
                 {
-                    case 1:
-                        saidaHTML = montaArquivoRetorno(diretorio, nomeArq);
-                        listaDiretorio = true;
-                        break;
-                    case 2:
-                        //Opcao 2 - Enviar a mensagem de conteudo nao pode ser listado
-                        nomeArq = "config/ConteudoIndisponivel.html";
-                        break;
-                    case 3:
-                        //Opcao 3 - Enviar o arquivo index.html
-                        nomeArq = diretorio.getPath()+"/index.html";
-                        break;
+                    //Se for um diretorio, verificar a opcao
+                    switch(ServidorWeb.opcaoDiretorio)
+                    {
+                        case 1:
+                            saidaHTML = montaArquivoRetorno(diretorio, nomeArq);
+                            listaDiretorio = true;
+                            break;
+                        case 2:
+                            //Opcao 2 - Enviar a mensagem de conteudo nao pode ser listado
+                            nomeArq = "config/ConteudoIndisponivel.html";
+                            break;
+                        case 3:
+                            //Opcao 3 - Enviar o arquivo index.html
+                            nomeArq = diretorio.getPath()+"/index.html";
+                            break;
+                    }
+                }
+                /* Fim PARTE C */
+
+                statusLine = "HTTP/1.1 200 OK" + CLRF;
+
+                /* Parte C - Para a opcao de listar os arquivos do diretorio, nao sera necessario abrir o arquivo */
+                if(listaDiretorio)
+                {
+                    contentTypeLine = "Content-type: text/html" + CLRF;                
+                    entityBody = null;
+                }
+                else
+                {
+                    //Aqui so vai entrar se o que foi pedido for um arquivo mesmo
+                    enviaArquivo = new FileInputStream(nomeArq);
+                    contentTypeLine = "Content-type: " + this.contentType(nomeArq) + CLRF;
+                    entityBody = enviaArquivo;
                 }
             }
-            /* Fim PARTE C */
-               
-            statusLine = "HTTP/1.1 200 OK" + CLRF;
             
-            /* Parte C - Para a opcao de listar os arquivos do diretorio, nao sera necessario abrir o arquivo */
-            if(listaDiretorio)
-            {
-                contentTypeLine = "Content-type: text/html" + CLRF;                
-                entityBody = null;
-            }
-            else
-            {
-                //Aqui so vai entrar se o que foi pedido for um arquivo mesmo
-                enviaArquivo = new FileInputStream(nomeArq);
-                contentTypeLine = "Content-type: " + this.contentType(nomeArq) + CLRF;
-                entityBody = enviaArquivo;
-            }
         }
         catch(FileNotFoundException e)
         {
             statusLine = "HTTP/1.1 404 Not Found" + CLRF;
             contentTypeLine = "Content-type: text/html" + CLRF;
-            entityBody = enviaArquivo = getErro404();
+            entityBody = enviaArquivo = getErro(404);
         }
         
         //Enviar a resposta
@@ -206,16 +242,16 @@ final class HttpRequest implements Runnable
         return mapa.getContentType(arq);
     }
     
-    //Método que retorna os dados do arquivo que contém o ERRO 404
-    public FileInputStream getErro404()
+    //Método que retorna os dados do arquivo que contém o ERRO requirido
+    public FileInputStream getErro(int erro)
     {
         try
         {
-            return new FileInputStream("config/Erro404.html");
+            return new FileInputStream("config/Erro"+erro+".html");
         }
         catch(Exception e)
         {
-            System.out.println("Não foi possível retornar o arquivo de erro 404.");
+            System.out.println("Não foi possível retornar o arquivo de erro"+erro+".");
             e.printStackTrace();
             return null;
         }
