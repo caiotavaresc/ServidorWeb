@@ -1,1096 +1,139 @@
 ##############################################
-#  Arquivo de Log - Registro de Requisições  #
+#  Arquivo de Log - Registro de Requisicoes  #
 ##############################################
 
-Servidor iniciado em: 17/09/2016 18:43:12
+Servidor iniciado em: 24/09/2016 17:10:23
 ----------------------------------------------
 
-Servidor iniciado em: 17/09/2016 20:43:37
-----------------------------------------------
-
-Servidor iniciado em: 17/09/2016 21:22:30
-----------------------------------------------
-
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 17/09/2016 21:22:34
+Horario da Requisicao: 24/09/2016 17:10:32
 Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1451
+Quantidade de bytes da resposta: 1500
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 17/09/2016 21:22:35
+Horario da Requisicao: 24/09/2016 17:10:32
 Conteudo Requisitado: /build/
-Quantidade de bytes da resposta: 742
+Quantidade de bytes da resposta: 723
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 17/09/2016 21:22:35
+Horario da Requisicao: 24/09/2016 17:10:39
+Conteudo Requisitado: /build/classes/
+Quantidade de bytes da resposta: 871
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 17:10:41
+Conteudo Requisitado: /build/classes/servidorweb/
+Quantidade de bytes da resposta: 881
+
+Servidor iniciado em: 24/09/2016 17:15:11
+----------------------------------------------
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 17:16:22
 Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1451
+Quantidade de bytes da resposta: 1536
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 17/09/2016 21:22:45
-Conteudo Requisitado: /best.jpg
-Quantidade de bytes da resposta: 53718
-
-Servidor iniciado em: 17/09/2016 21:31:24
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 17/09/2016 21:31:34
-Conteudo Requisitado: /best.jpg
-Quantidade de bytes da resposta: 53718
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 17/09/2016 21:31:34
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1030
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 17/09/2016 21:31:34
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 434
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 17/09/2016 21:31:39
-Conteudo Requisitado: /config/log.txt
-Quantidade de bytes da resposta: 1771
-
-Servidor iniciado em: 21/09/2016 10:09:13
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:09:28
-Conteudo Requisitado: /best.jpg
-Quantidade de bytes da resposta: 53718
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:09:28
+Horario da Requisicao: 24/09/2016 17:16:22
 Conteudo Requisitado: /favicon.ico
 Quantidade de bytes da resposta: 1443
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:09:33
+Horario da Requisicao: 24/09/2016 17:16:23
 Conteudo Requisitado: /best.jpg
 Quantidade de bytes da resposta: 53718
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:09:34
+Horario da Requisicao: 24/09/2016 17:16:27
+Conteudo Requisitado: /restrito/
+Quantidade de bytes da resposta: 778
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 17:16:36
+Conteudo Requisitado: /restrito/
+Quantidade de bytes da resposta: 689
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 17:16:40
 Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
+Quantidade de bytes da resposta: 1536
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:09:35
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1074
+Horario da Requisicao: 24/09/2016 17:16:41
+Conteudo Requisitado: /config/
+Quantidade de bytes da resposta: 778
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:09:56
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 420
+Horario da Requisicao: 24/09/2016 17:16:45
+Conteudo Requisitado: /config/
+Quantidade de bytes da resposta: 1109
 
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:10:02
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 420
+Servidor iniciado em: 24/09/2016 17:50:44
+----------------------------------------------
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:10:04
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 420
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:10:05
+Horario da Requisicao: 24/09/2016 17:50:56
 Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
+Quantidade de bytes da resposta: 1536
 
-Servidor iniciado em: 21/09/2016 10:34:45
-----------------------------------------------
-
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:35:18
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1074
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:35:20
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1074
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:35:28
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 420
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:35:31
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 420
-
-Servidor iniciado em: 21/09/2016 10:42:42
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:42:48
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 420
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:42:49
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1074
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:42:50
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1074
-
-Servidor iniciado em: 21/09/2016 10:43:27
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:43:29
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1074
-
-Servidor iniciado em: 21/09/2016 10:43:49
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:43:51
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1074
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:46:33
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:46:33
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:46:38
-Conteudo Requisitado: /best.jpg
-Quantidade de bytes da resposta: 53718
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:46:55
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1074
-
-Servidor iniciado em: 21/09/2016 10:51:01
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:51:05
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 420
-
-Servidor iniciado em: 21/09/2016 10:51:31
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:51:37
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 420
-
-Servidor iniciado em: 21/09/2016 10:52:19
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 10:52:21
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 420
-
-Servidor iniciado em: 21/09/2016 11:21:15
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:21:19
-Conteudo Requisitado: /config/config.txt
+Horario da Requisicao: 24/09/2016 17:50:56
+Conteudo Requisitado: /favicon.ico
 Quantidade de bytes da resposta: 1443
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:21:24
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 1443
+Horario da Requisicao: 24/09/2016 17:50:57
+Conteudo Requisitado: /config/
+Quantidade de bytes da resposta: 778
 
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:21:27
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1081
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:21:27
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1081
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:21:35
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 1443
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:21:38
-Conteudo Requisitado: /config/Erro404.html
-Quantidade de bytes da resposta: 1436
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:21:40
-Conteudo Requisitado: /config/log.txt
-Quantidade de bytes da resposta: 7949
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:21:47
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 1443
-
-Servidor iniciado em: 21/09/2016 11:23:51
+Servidor iniciado em: 24/09/2016 17:52:06
 ----------------------------------------------
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:23:53
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1081
+Horario da Requisicao: 24/09/2016 17:52:09
+Conteudo Requisitado: raiz
+Quantidade de bytes da resposta: 1536
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:23:55
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 1443
+Horario da Requisicao: 24/09/2016 17:52:10
+Conteudo Requisitado: /config/
+Quantidade de bytes da resposta: 809
 
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:23:57
-Conteudo Requisitado: /config/log.txt
-Quantidade de bytes da resposta: 8729
-
-Servidor iniciado em: 21/09/2016 11:24:39
+Servidor iniciado em: 24/09/2016 17:52:50
 ----------------------------------------------
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:24:42
-Conteudo Requisitado: /config/log.txt
-Quantidade de bytes da resposta: 1443
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:24:46
-Conteudo Requisitado: /config/log.txt
-Quantidade de bytes da resposta: 1443
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:24:47
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 1443
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:24:48
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1081
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 21/09/2016 11:24:48
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1081
-
-Servidor iniciado em: 22/09/2016 08:50:32
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 08:51:02
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1074
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 08:51:02
+Horario da Requisicao: 24/09/2016 17:52:54
 Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
+Quantidade de bytes da resposta: 1536
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 08:51:03
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
+Horario da Requisicao: 24/09/2016 17:52:55
+Conteudo Requisitado: /config/
+Quantidade de bytes da resposta: 811
 
-Endereço de Origem: localhost
+Endereco de Origem: localhost
 Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 08:51:08
-Conteudo Requisitado: /servidorweb
-Quantidade de bytes da resposta: 732
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 08:51:10
-Conteudo Requisitado: /servidorweb/
-Quantidade de bytes da resposta: 708
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 08:51:12
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 08:51:20
-Conteudo Requisitado: /best.jpg
-Quantidade de bytes da resposta: 53718
-
-Servidor iniciado em: 22/09/2016 09:03:44
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:04:01
-Conteudo Requisitado: /src
-Quantidade de bytes da resposta: 802
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:04:03
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Servidor iniciado em: 22/09/2016 09:05:48
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:05:59
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:06:04
-Conteudo Requisitado: /src
-Quantidade de bytes da resposta: 802
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:06:05
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:06:14
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1456
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:12:45
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1456
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:12:46
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1456
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:12:47
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1456
-
-Servidor iniciado em: 22/09/2016 09:12:53
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:12:55
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 743
-
-Servidor iniciado em: 22/09/2016 09:20:47
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:21:01
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:21:03
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 743
-
-Servidor iniciado em: 22/09/2016 09:21:39
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:21:47
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1212
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:21:48
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:21:48
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:21:50
-Conteudo Requisitado: /src
-Quantidade de bytes da resposta: 802
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:21:51
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:21:53
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1212
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:22:04
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Servidor iniciado em: 22/09/2016 09:25:06
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:25:14
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:25:16
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1212
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:25:20
-Conteudo Requisitado: /config/.htaccess
-Quantidade de bytes da resposta: 314
-
-Servidor iniciado em: 22/09/2016 09:30:03
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:30:13
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:30:16
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1212
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:35:26
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:35:27
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1212
-
-Servidor iniciado em: 22/09/2016 09:35:36
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:35:38
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:35:39
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1212
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:36:48
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1212
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:36:50
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1212
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:36:51
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:36:52
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 1212
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:36:54
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 1484
-
-Servidor iniciado em: 22/09/2016 09:52:31
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:52:46
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 746
-
-Servidor iniciado em: 22/09/2016 09:53:31
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:53:33
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:53:42
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:54:03
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:54:29
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 09:54:34
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Servidor iniciado em: 22/09/2016 10:03:21
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:03:31
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:03:32
-Conteudo Requisitado: /apple-touch-icon-precomposed.png
-Quantidade de bytes da resposta: 1443
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:03:32
-Conteudo Requisitado: /apple-touch-icon.png
-Quantidade de bytes da resposta: 1443
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:03:38
-Conteudo Requisitado: /src
-Quantidade de bytes da resposta: 260
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:03:39
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:03:42
-Conteudo Requisitado: /best.jpg
-Quantidade de bytes da resposta: 53718
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:03:54
-Conteudo Requisitado: /index.html
-Quantidade de bytes da resposta: 1468
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:04:15
-Conteudo Requisitado: /index.html
-Quantidade de bytes da resposta: 1468
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:04:16
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:04:17
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:04:17
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:04:19
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:04:20
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:04:21
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:05:51
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:06:30
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:07:07
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:07:16
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Servidor iniciado em: 22/09/2016 10:07:30
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:07:31
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:07:32
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:07:39
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:07:50
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Servidor iniciado em: 22/09/2016 10:09:06
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:09:08
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:09:12
-Conteudo Requisitado: /index.html
-Quantidade de bytes da resposta: 1468
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:09:14
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:09:14
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:09:16
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:09:22
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 758
-
-Servidor iniciado em: 22/09/2016 10:42:27
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:42:35
-Conteudo Requisitado: /config/log.txt
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:42:35
-Conteudo Requisitado: /config/log.txt
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:42:35
-Conteudo Requisitado: /config/log.txt
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:42:36
-Conteudo Requisitado: /config/log.txt
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:42:36
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:42:40
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:42:45
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Servidor iniciado em: 22/09/2016 10:43:26
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:43:30
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:43:36
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:43:36
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:43:37
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:43:37
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:43:40
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:43:48
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Servidor iniciado em: 22/09/2016 10:44:42
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:44:45
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:44:45
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:44:52
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 622
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:45:02
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 431
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:45:08
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 622
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:45:15
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Servidor iniciado em: 22/09/2016 10:45:23
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:45:27
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:45:28
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 622
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:45:43
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 622
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:45:49
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 431
-
-Servidor iniciado em: 22/09/2016 10:46:52
-----------------------------------------------
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:46:53
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:46:55
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:47:04
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:47:06
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:47:07
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:47:13
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 622
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:47:36
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:47:36
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:47:38
-Conteudo Requisitado: /config
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:47:42
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:47:47
-Conteudo Requisitado: /config/config.txt
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:52:38
-Conteudo Requisitado: /servidorweb/
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:52:38
-Conteudo Requisitado: /servidorweb
-Quantidade de bytes da resposta: 190
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:52:40
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:52:48
-Conteudo Requisitado: /servidorweb
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:52:50
-Conteudo Requisitado: /servidorweb
-Quantidade de bytes da resposta: 761
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:52:54
-Conteudo Requisitado: raiz
-Quantidade de bytes da resposta: 942
-
-Endereço de Origem: localhost
-Porta de Origem: 6789
-Horario da Requisicao: 22/09/2016 10:52:55
-Conteudo Requisitado: /best.jpg
-Quantidade de bytes da resposta: 53718
+Horario da Requisicao: 24/09/2016 17:53:28
+Conteudo Requisitado: /config/
+Quantidade de bytes da resposta: 1109
 

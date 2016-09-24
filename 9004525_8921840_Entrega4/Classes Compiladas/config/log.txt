@@ -1,0 +1,79 @@
+##############################################
+#  Arquivo de Log - Registro de Requisicoes  #
+##############################################
+
+Servidor iniciado em: 24/09/2016 18:54:21
+----------------------------------------------
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 18:54:32
+Conteudo Requisitado: raiz
+Quantidade de bytes da resposta: 834
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 18:54:40
+Conteudo Requisitado: /best.jpg
+Quantidade de bytes da resposta: 53718
+
+Servidor iniciado em: 24/09/2016 19:02:14
+----------------------------------------------
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 19:02:29
+Conteudo Requisitado: raiz
+Quantidade de bytes da resposta: 834
+
+Servidor iniciado em: 24/09/2016 19:05:30
+----------------------------------------------
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 19:05:37
+Conteudo Requisitado: raiz
+Quantidade de bytes da resposta: 1712
+
+Servidor iniciado em: 24/09/2016 19:06:57
+----------------------------------------------
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 19:07:16
+Conteudo Requisitado: raiz
+Quantidade de bytes da resposta: 1458
+
+Servidor iniciado em: 24/09/2016 19:19:05
+----------------------------------------------
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 19:19:52
+Conteudo Requisitado: raiz
+Quantidade de bytes da resposta: 873
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 19:19:57
+Conteudo Requisitado: /config/
+Quantidade de bytes da resposta: 811
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 19:21:32
+Conteudo Requisitado: /config/
+Quantidade de bytes da resposta: 811
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 19:22:34
+Conteudo Requisitado: /config/
+Quantidade de bytes da resposta: 998
+
+Endereco de Origem: localhost
+Porta de Origem: 6789
+Horario da Requisicao: 24/09/2016 19:23:14
+Conteudo Requisitado: /config/log.txt
+Quantidade de bytes da resposta: 2171
+
